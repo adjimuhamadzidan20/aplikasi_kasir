@@ -44,7 +44,7 @@ public class data_barang extends javax.swing.JFrame {
         resetbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Data Barang | Aplikasi Kasir");
+        setTitle("Data Barang | BE - CASHIER");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(248, 248, 248));

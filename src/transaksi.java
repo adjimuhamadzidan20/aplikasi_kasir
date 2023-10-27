@@ -47,8 +47,7 @@ public class transaksi extends javax.swing.JFrame {
         hapusList = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Aplikasi Kasir | Transaksi");
-        setPreferredSize(new java.awt.Dimension(756, 545));
+        setTitle("Transaksi | BE - CASHIER");
         setResizable(false);
         setSize(new java.awt.Dimension(756, 545));
 
