@@ -16,6 +16,7 @@ public class transaksi extends javax.swing.JFrame {
         totaljumlah.setEditable(false);
         btnSubmitBayar.setEnabled(false);
         btnHitungTotal.setEnabled(false);
+        listProduk.setFocusable(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -51,9 +52,10 @@ public class transaksi extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(756, 545));
 
-        jPanel1.setBackground(new java.awt.Color(248, 248, 248));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Transaksi");
 
         listProduk.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-- Pilih Produk --" }));
@@ -63,10 +65,13 @@ public class transaksi extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Pilih Produk");
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Jumlah");
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Harga");
 
         tambahList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ikon/saves.png"))); // NOI18N
@@ -96,10 +101,13 @@ public class transaksi extends javax.swing.JFrame {
 
         totaljumlah.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Total Jumlah");
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Yang dibayarkan");
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Kembalian");
 
         kembalian.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -120,6 +128,7 @@ public class transaksi extends javax.swing.JFrame {
             }
         });
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Qty");
 
         hapusList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ikon/eraser.png"))); // NOI18N
@@ -208,14 +217,14 @@ public class transaksi extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jumlah, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3))
-                        .addGap(9, 9, 9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(tambahList)
                                 .addComponent(hapusList))
-                            .addComponent(btnHitungTotal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnHitungTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(4, 4, 4)

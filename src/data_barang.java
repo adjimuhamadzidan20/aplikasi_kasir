@@ -14,7 +14,8 @@ public class data_barang extends javax.swing.JFrame {
         kodeBarangAuto();
         
         editbtn.setEnabled(false);
-        hapusbtn.setEnabled(false);  
+        hapusbtn.setEnabled(false); 
+        simpanbtn.setFocusable(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -47,17 +48,22 @@ public class data_barang extends javax.swing.JFrame {
         setTitle("Data Barang | BE - CASHIER");
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(248, 248, 248));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Data Barang");
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nama Produk");
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Kategori Produk");
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Harga Satuan");
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Jumlah Stok");
 
         tablebarang.setModel(new javax.swing.table.DefaultTableModel(
@@ -116,6 +122,7 @@ public class data_barang extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Kode Produk");
 
         kodeBarang.setEditable(false);
@@ -135,7 +142,6 @@ public class data_barang extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,7 +173,8 @@ public class data_barang extends javax.swing.JFrame {
                                 .addComponent(hapusbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(resetbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 711, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(kembalibtn))
+                    .addComponent(kembalibtn)
+                    .addComponent(jLabel1))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
